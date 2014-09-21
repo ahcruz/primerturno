@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimerTurno", "PrimerTurno\PrimerTurno.csproj", "{F6B05E4A-7F84-4545-B0DD-8A697DCBBA85}"
 EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "Diagramas", "Diagramas\Diagramas.modelproj", "{0F7957D2-5E3E-420F-BA60-E977F374A955}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{F6B05E4A-7F84-4545-B0DD-8A697DCBBA85}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F6B05E4A-7F84-4545-B0DD-8A697DCBBA85}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F6B05E4A-7F84-4545-B0DD-8A697DCBBA85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F7957D2-5E3E-420F-BA60-E977F374A955}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F7957D2-5E3E-420F-BA60-E977F374A955}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F7957D2-5E3E-420F-BA60-E977F374A955}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F7957D2-5E3E-420F-BA60-E977F374A955}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
