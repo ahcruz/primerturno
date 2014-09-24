@@ -72,32 +72,6 @@
       </propertyInstances>
     </stereotypeInstance>
   </appliedStereotypesInternal>
-  <profileInstances>
-    <packageHasProfileInstances Id="457de0d0-f812-4f5f-8a0a-86a159ef6480">
-      <profileInstance Id="78e0f7db-bd5d-49d4-9b96-122c566ace31" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="fad99b5f-aea1-4a2c-9616-6ffafdab2c65">
-      <profileInstance Id="66091b31-e071-4dba-9766-1d9d9019a82e" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="c959b7ac-1f06-4fb0-b0fb-ef35e90144fd">
-      <profileInstance Id="172db53e-e1db-4784-8513-f3c897f25129" name="CSharpProfile">
-        <elementDefinition Id="392a3243-e3cb-42b6-a575-fa92e2a3593e" />
-      </profileInstance>
-      <elementDefinition Id="b0a12e5e-c7a8-4667-a80e-bbcaca3a0a5d" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="6f406c40-cb68-4d82-b1a1-f31fed9c4de4">
-      <profileInstance Id="42218e70-c8ff-4ec4-89ce-735985357a3c" name="TextTemplateBindings">
-        <elementDefinition Id="93e50caf-2f65-4371-a6be-ba9325d14380" />
-      </profileInstance>
-      <elementDefinition Id="ca581cee-8156-4755-9c22-8b0cb128d8ba" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
       <class Id="01202a6d-d0ba-4411-9fc8-41addf8f8513" name="Persona" isAbstract="false" isLeaf="false" isActiveClass="false">
@@ -351,8 +325,53 @@
         </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a42e23a1-c284-4efb-a59d-98bec0144a5d" name="Usuario" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f5b55964-d01c-44cb-95bc-fea36399a8f8" />
+        <generalsInternal>
+          <generalization Id="3e9b1324-aced-4117-b377-ad651589d46a" isSubstitutable="false">
+            <classMoniker Id="01202a6d-d0ba-4411-9fc8-41addf8f8513" LastKnownName="Persona" />
+            <elementDefinition Id="171bdbd1-6bdc-4b64-9515-86d763a92ab6" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="bd71673d-5484-451e-bba7-699ef959e0d8" name="Usuario" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="53986fac-7a36-4f35-a7a3-4a060c4baa69" />
+          </property>
+          <property Id="db62a33c-3b99-41d9-9321-108680455e47" name="Password" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b61eb809-148d-4ad3-9b62-ffb797e7546a" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
   </packagedElements>
   <package Id="562b5951-3800-4c7a-9996-34b45b01513a" name="Diagramas">
     <elementDefinition Id="ae0258d1-813d-47ef-b516-5b028154478f" />
+    <profileInstances>
+      <packageHasProfileInstances Id="457de0d0-f812-4f5f-8a0a-86a159ef6480">
+        <profileInstance Id="78e0f7db-bd5d-49d4-9b96-122c566ace31" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="fad99b5f-aea1-4a2c-9616-6ffafdab2c65">
+        <profileInstance Id="66091b31-e071-4dba-9766-1d9d9019a82e" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="c959b7ac-1f06-4fb0-b0fb-ef35e90144fd">
+        <profileInstance Id="172db53e-e1db-4784-8513-f3c897f25129" name="CSharpProfile">
+          <elementDefinition Id="392a3243-e3cb-42b6-a575-fa92e2a3593e" />
+        </profileInstance>
+        <elementDefinition Id="b0a12e5e-c7a8-4667-a80e-bbcaca3a0a5d" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="6f406c40-cb68-4d82-b1a1-f31fed9c4de4">
+        <profileInstance Id="42218e70-c8ff-4ec4-89ce-735985357a3c" name="TextTemplateBindings">
+          <elementDefinition Id="93e50caf-2f65-4371-a6be-ba9325d14380" />
+        </profileInstance>
+        <elementDefinition Id="ca581cee-8156-4755-9c22-8b0cb128d8ba" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </logicalClassDesignerModel>

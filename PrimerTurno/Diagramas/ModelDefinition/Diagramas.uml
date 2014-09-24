@@ -442,6 +442,49 @@
         </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="f5b55964-d01c-44cb-95bc-fea36399a8f8"
+        name="Usuario"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="171bdbd1-6bdc-4b64-9515-86d763a92ab6"
+            isSubstitutable="false">
+            <classMoniker
+              Id="30134eb9-a816-4fbe-810d-14c0e2697f55"
+              LastKnownName="Persona"
+              LastKnownLocation="Diagramas.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="53986fac-7a36-4f35-a7a3-4a060c4baa69"
+            name="Usuario"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="b61eb809-148d-4ad3-9b62-ffb797e7546a"
+            name="Password"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
   </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"
