@@ -21,6 +21,12 @@ namespace PrimerTurno.Controllers
             return View(db.Usuarios.ToList());
         }
 
+        [HttpGet]
+        public ActionResult Login()
+        {
+            return View();
+        }
+
         // GET: Usuarios/Details/5
         //public ActionResult Details(int? id)
         //{
@@ -36,8 +42,8 @@ namespace PrimerTurno.Controllers
         //    return View(usuario);
         //}
 
-        // GET: Usuarios/Create
-        public ActionResult Create()
+        // GET: Usuarios/Create        
+        public ActionResult Crear()
         {
             return View();
         }
@@ -47,7 +53,7 @@ namespace PrimerTurno.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "DNI,Apellido,Nombre,TipoT,UsuarioNombre,Password")] Usuario usuario)
+        public ActionResult Crear([Bind(Include = "DNI,Apellido,Nombre,TipoT,UsuarioNombre,Password")] Usuario usuario)
         {
             if (ModelState.IsValid)
             {
@@ -123,6 +129,19 @@ namespace PrimerTurno.Controllers
                 db.Dispose();
             }
             base.Dispose(disposing);
+        }
+
+        private bool isValid(string usuario, string password)
+        {
+            bool isValid = false;
+            Usuario user = db.Usuarios.Find(usuario);
+
+            if (user != null && user.Password == password)
+            {
+                isValid = true;
+            }
+
+            return isValid;
         }
     }
 }
